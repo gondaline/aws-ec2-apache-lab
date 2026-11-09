@@ -1,0 +1,4 @@
+# Chaves SSH e credenciais nunca devem ir para o repositório
+*.pem
+*.key
+.env
