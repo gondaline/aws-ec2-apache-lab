@@ -1,5 +1,7 @@
 # CloudLab | AWS EC2 + Apache HTTP Server
 
+**[Ver a página →](https://gondaline.github.io/aws-ec2-apache-lab/)** · cópia estática no GitHub Pages, já que a instância EC2 não fica ligada permanentemente. As evidências da publicação na EC2 estão na seção [Evidências](#evidências).
+
 Laboratório prático de **computação em nuvem e administração Linux**, com o objetivo de hospedar uma página estática em uma instância **Amazon EC2**, utilizando o **Apache HTTP Server** para responder a requisições HTTP.
 
 O foco deste projeto não está na complexidade do HTML, e sim no processo de **provisionamento, acesso remoto, configuração de rede, instalação de serviços e publicação na nuvem**.

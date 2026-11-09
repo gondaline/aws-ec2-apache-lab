@@ -193,6 +193,16 @@
       .card { padding: 22px; }
       pre { font-size: .82rem; padding: 18px; }
     }
+    .preview-banner {
+      padding: 11px 16px;
+      border-bottom: 1px solid rgba(255, 173, 67, .28);
+      background: rgba(255, 173, 67, .08);
+      color: var(--muted);
+      font-size: .86rem;
+      text-align: center;
+    }
+    .preview-banner strong { color: var(--text); }
+    .preview-banner a { color: var(--accent); font-weight: 700; white-space: nowrap; }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { transition: none !important; }
@@ -200,6 +210,14 @@
   </style>
 </head>
 <body>
+  <div class="preview-banner" id="preview-banner" role="note" hidden>
+    Você está vendo uma <strong>prévia no GitHub Pages</strong>. Durante o laboratório, esta mesma página foi servida pelo Apache em uma instância Amazon EC2.
+    <a href="https://github.com/gondaline/aws-ec2-apache-lab#evidências">Ver as evidências →</a>
+  </div>
+  <script>
+    if (location.hostname.endsWith('github.io')) document.getElementById('preview-banner').hidden = false;
+  </script>
+
   <header class="container">
     <div class="brand"><div class="brand-mark" aria-hidden="true">⌘</div><span>cloud<span style="color: var(--accent)">lab</span></span></div>
     <span class="header-label">Projeto de estudos • Infraestrutura AWS</span>
